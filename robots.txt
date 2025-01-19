@@ -1,4 +1,4 @@
-#robots.txt zu http://www.lien_du_site/
+#robots.txt zu https://0xsharlyne.github.io/Mintopia.github.io
 
 User-agent: *
 # Erlaubt allen Suchmaschinen, alle öffentlichen Seiten zu durchsuchen
@@ -6,7 +6,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://mintopia.com/sitemap.xml  
+Sitemap: https://0xsharlyne.github.io/Mintopia.github.io/Sitemap.xml  
 
 # Hinweis für Googlebot, der mehr Frequenz bei bestimmten Bereichen hat
 User-agent: Googlebot
