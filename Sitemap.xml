@@ -1,38 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lien du site/index.html</loc>
+    <loc>https://0xsharlyne.github.io/Mintopia.github.io/index.html</loc>
     <lastmod>2024-01-13</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://lien du site/Informatik.html</loc>
-    <lastmod>2024-01-13</lastmod>
+    <lochttps://0xsharlyne.github.io/Mintopia.github.io/mathe.html</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://lien du site/mathe.html</loc>
-    <lastmod>2024-01-13</lastmod>
+    <loc>https://0xsharlyne.github.io/Mintopia.github.io/naturwissenschaft.html</loc>
+    <lastmod>2025-01-19<</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://lien du site/Naturwissenschaft.html</loc>
-    <lastmod>2024-01-13</lastmod>
+    <loc>https://0xsharlyne.github.io/Mintopia.github.io/informatik.html</loc>
+    <lastmod>2025-01-19<</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://lien du site/Mystery_box.html</loc>
+    <loc>https://0xsharlyne.github.io/Mintopia.github.io/mystery_box.html</loc>
+    <lastmod>2025-01-19<</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://0xsharlyne.github.io/Mintopia.github.io/result.html</loc>
     <lastmod>2024-01-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.40</priority>
+    <priority>0.20</priority>
   </url>
 
 </urlset>
