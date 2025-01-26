@@ -31,8 +31,7 @@ body {
   width: 100%;
   gap: 4rem;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  letter-spacing: 0.03rem;
-  line-height: 1.5; /* 1.5 times the font size for body text */
+  line-height: 1.6;
   }
   /*correct and incorrect*/
 .correct{
@@ -85,6 +84,7 @@ height: 50px;
   position: absolute;
   align-items: flex-start;
   top: 4rem;
+  right: 2rem;
   padding: 1rem;
   gap: 0.5rem;
   background: rgba(255, 255, 255, 0.95); /* Fond blanc semi-transparent */
@@ -106,7 +106,6 @@ height: 50px;
   transition: color 0.3s ease, transform 0.3s ease;
   position: relative;
   font-size: 1.3rem;
-  white-space: nowrap;
 }
 
 .header_menu a::after {
@@ -182,7 +181,7 @@ height: 50px;
   margin-right: 0.5rem;
   padding: 1rem;
   border-radius: 10px;
-  line-height: 1.3em;
+  line-height: 1.6;
   border: 1.5px groove #1b1a1a;
   background-color: bisque;
   margin-top: 1.5em;
@@ -847,6 +846,12 @@ p.intro-text {
 .informatik_container .Inhalt_Informatik {
   grid-area: Inhalt;
 }
+.Inhalt_Informatik h2{
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.4rem 5px;
+}
 
 .informatik_container .Quiz {
   grid-area: Quiz;
@@ -1098,10 +1103,12 @@ margin-top: 2.5rem;
   background-color:  #390dff;
   color:#ffffff;
   cursor: pointer;
+  padding: 1rem 2rem;
 }
 #mathe_quiz_submit{
   display: block;
 }
+
 #mathe_quiz_reset,#btnres {
   display: none;
 }
@@ -1124,9 +1131,7 @@ margin-top: 2.5rem;
     "u4"
     "footer";
   background-color: rgb(255, 255, 255);
-  font-size: 1.4rem;
 
-  
 }
 
 /*change menu color*/
@@ -1143,17 +1148,6 @@ margin-top: 2.5rem;
   color: rgba(0, 123, 255, 1);
 }
 
-/*styling header*/
-.mathe_container h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 2rem 0 ;
-}
-.mathe_container h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
 .mathe_container ul > li {
   display: list-item;
@@ -1205,7 +1199,10 @@ margin-top: 2.5rem;
   position: relative;
   height: auto;
   border-top: 5px solid rgba(0, 123, 255, 1);
-  line-height: 1.6;
+
+}
+[class^="content_mathe"] h1{
+  padding: 0.8rem;
 }
 
 /*change second div in Content Geometrie and Bruchzahl*/
@@ -1216,6 +1213,9 @@ margin-top: 2.5rem;
   border-radius: 1rem;
   padding: 1rem;
   background-color: hsl(300, 90%, 90%);
+}
+.mathe_container #stick {
+  font-size: 1rem;
 }
 
 .mathe_container #geometrie div:nth-of-type(2) h1,
@@ -1266,6 +1266,7 @@ margin-top: 2.5rem;
   padding: 0.3rem 1.5rem;
   background-color: hsl(120, 100%, 90%);
   border-radius: 6px;
+  margin-top: 1rem;
 }
 
 .mathe_container #show {
@@ -1291,7 +1292,7 @@ margin-top: 2.5rem;
 /*for the Uebung teil in mathe*/
 /*padding: top right bottom left*/
 [class$="mathe_uebung"] {
-  padding: 1.5rem 1rem 0 2.5rem  ;
+  padding: 1.5rem 1rem 2rem 2.5rem  ;
 }
 
 
@@ -1426,6 +1427,7 @@ margin-top: 2.5rem;
     background-color: #fff;
     box-shadow: none;
     top:3rem;
+    margin: 0 5px;
     
 
   }
@@ -1454,6 +1456,10 @@ margin-top: 2.5rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "html" "css" "JavaScript";
   }
+  .Inhalt_Informatik figcaption{
+    white-space: nowrap;
+  }
+
   /*--------------------end_informatik----------------------------*/
 
   /*--------------------start_mathe----------------------------*/
@@ -1506,6 +1512,8 @@ margin-top: 2.5rem;
 }
 
 @media screen and (min-width: 920px) {
+
+
   
   /*----------------------start Naturwissenschaft---------------------------------------------*/
   [class^="experiment_content"] {
@@ -1527,9 +1535,6 @@ margin-top: 2.5rem;
   body {
     font-size: 18px;
     margin: 0 auto;
-  }
-  [class$="beschreibung"] {
-    font-size: 1.6em;
   }
  
 
@@ -1553,6 +1558,7 @@ margin-top: 2.5rem;
 
   [class$="header"] img{
     margin-top: 1.6rem;
+
     
   }
   .header_title{
@@ -1617,7 +1623,7 @@ margin-top: 2.5rem;
   .mathe_container #algebra {
     height: 100%;
     margin-left: 2rem;
-    line-height: 1.6rem;
+    line-height: 1.6;
   }
   
 
@@ -1664,6 +1670,13 @@ margin-top: 2.5rem;
     height: 24rem;
   }
 
+  [class$="title"] {
+    
+    top: -1.5em;
+    font-size: 1.8rem;
+    
+  }
+
   
  
 
@@ -1680,6 +1693,9 @@ margin-top: 2.5rem;
   }
   .naturwissenschaft_container .water_rise , .naturwissenschaft_quiz {
     margin: 1rem;
+  }
+  #natur_quiz_submit{
+      padding: 1rem 2rem;
   }
 
   .naturwissenschaft_container .water_rise p {
@@ -1710,6 +1726,12 @@ margin-top: 2.5rem;
   /*-------------------------end_naturwissensschaft--------------------------------*/
 
   /*-------------------------start_mathe--------------------------------*/
+  .mathe_container #algebra {
+    height: 100%;
+    margin-left: 2rem;
+    line-height: 2;
+  }
+  
   .mathe_header nav.header_menu a{
     font-size: 1.4rem;  
   }
@@ -1717,6 +1739,29 @@ margin-top: 2.5rem;
   [class$="_container"] {
     font-size: larger;
   }
+  .mathe_container #stick {
+    font-size: 1.4rem;
+  }
+  .mathe_container .inal input {
+    width: 150px;
+    height: 30px;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    font-family: inherit;
+  }
+  #btnsum,#btnres{
+    padding: 0.8rem 2rem;
+    margin: 1.2rem;
+  }
+  #mathe_quiz_submit,#mathe_quiz_reset {
+    padding: 1.3rem 2.4rem;
+  }
+  [class$="mathe_uebung"]  ol {
+    gap:3.5rem
+  }
+
+
   /*-------------------------end_mathe--------------------------------*/
 
 }
@@ -1730,28 +1775,69 @@ margin-top: 2.5rem;
 
   
   [class$="_container"] {
-    font-size: 30px;
+    font-size: 2.6rem;
   }
-  
-  .mathe_container h1 {
-    font-size: 70px;
+  .mathe_container #stick{
+    font-size: 2.4rem;
   }
+
+  .mathe_container .inal input {
+    width: 200px;
+    height: 50px;
+    padding: 1.8rem;
+    font-size: 1.8rem;
+    border-radius: 10px;
+  }
+
   [class*="mathe_video"] iframe {
     height: 50rem;
   }
   .mathe_title {
     font-size: 40px;
   }
-  
+ 
+  #btnsum,#btnres{
+    padding: 1.8rem 4rem;
+    margin: 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 12px;
+  }
+
 
   /*-------------------------end_mathe--------------------------------*/
-  /*-----------------------------Naturwissenschaft---------------*/
+  /*-----------------------------start Naturwissenschaft---------------*/
   .experiment_content1 iframe, .experiment_content2 iframe{
     height: 650px;
   }
  
-  .naturwissenschaft_container section.water_rise{
+  .naturwissenschaft_container section.water_rise p{
     padding: 0rem;
-    font-size: 64px;
+    font-size: 2.3rem;
   }
+  #natur_quiz_submit{
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    border-radius: 12px;
+}
+#lightCandle{
+  margin-top: 1.4rem;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+}
+.naturwissenschaft_beschreibung > * {
+  font-size: 2.3rem;
+
+}
+
+.naturwissenschaft_container .water_rise , .naturwissenschaft_quiz {
+  margin: 1rem;
+}
+
+  /*----------------------------- End Naturwissenschaft---------------*/
+
+  /*----------------------------- start Informatik ---------------*/
+
+
+  /*----------------------------- End Informatik ---------------*/
+
 }
