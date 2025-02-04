@@ -48,7 +48,7 @@ if (!(document.body.id === "response_auf_mystery_form_page")) {
     });
 
 
-    window.addEventListener("resize", function () {
+    /*window.addEventListener("resize", function () {
         if (window.matchMedia("(min-width: 768px)").matches) {
             headerMenu.classList.remove("active");
             fabars.classList.replace("fa-close", "fa-bars");
@@ -59,7 +59,8 @@ if (!(document.body.id === "response_auf_mystery_form_page")) {
                 headerMenu.setAttribute("aria-hidden", true);
             }
         }
-    });
+    });*/
+
 }
 
 if (document.body.id === "naturwissenschaft_page" || document.body.id === "mathe_body" || document.body.id === "informatik_body") {
@@ -68,7 +69,7 @@ if (document.body.id === "naturwissenschaft_page" || document.body.id === "mathe
         if (window.scrollY > 150) {
             goupbtn.style.display = 'flex';
         } else {
-            goupbtn.style.display = 'none';
+            goupbtn.style.display = 'none  ';
         }
 
     };
@@ -284,7 +285,7 @@ if (document.body.id === 'informatik_body') {
              </head>
              <body>
                ${htmlCode}
-               <script>${jsCode}<\/script>
+               <script>${jsCode}</script>
              </body>
            </html>
          `;
@@ -308,6 +309,7 @@ if (document.body.id === 'mathe_body') {
     const resetMathe = document.getElementById("mathe_quiz_reset");
     const form_mathe_u1 = document.getElementById("form_mathe_u1");
     const form_mathe_u2 = document.getElementById("form_mathe_u2");
+    const mathe_quiz_buttons = document.getElementById("mathe_quiz_buttons")
     //funcQuiz(submit1, answers1, result1);
 
     submitMathe.addEventListener('click', () => {
@@ -333,7 +335,6 @@ if (document.body.id === 'mathe_body') {
 
         e.preventDefault();//prevent default behaviour of form
         console.log("inside 1")
-        document.getElementById("btnres").style.display = "block"
         const n1 = document.getElementById("l1").value;
         const n2 = document.getElementById("l2").value;
         let sum = parseInt(n1) + parseInt(n2);
@@ -371,9 +372,12 @@ if (document.body.id === 'mathe_body') {
     });
 
     function resetAlgebra() {
-        btnsum.style.display = "none"
+        document.getElementById("btnres").style.display = "block"
+        //btnsum.style.display = "none"
         show.style.display = "block"
+        mathe_quiz_buttons.classList.add('flexbutton');
         document.getElementById("btnres").addEventListener('click', () => {
+            mathe_quiz_buttons.classList.remove('flexbutton');
             btnsum.style.display = "block"
             show.style.display = "none"
             document.getElementById("btnres").style.display = "none"

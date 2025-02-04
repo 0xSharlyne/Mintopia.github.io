@@ -19,7 +19,6 @@ li {
 }
 
 body {
- /* font-family: "Comic Sans MS", "Poppins", sans-serif;*/
  min-width: 375px;
   font-size: 16px;
   width: 100%;
@@ -31,6 +30,7 @@ body {
   width: 100%;
   gap: 4rem;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;;
   line-height: 1.6;
   }
   /*correct and incorrect*/
@@ -1099,6 +1099,7 @@ margin-top: 2.5rem;
   background-color: #007bff;
   top:-1.8em
 }
+
 #mathe_quiz_submit,#mathe_quiz_reset {
   background-color:  #390dff;
   color:#ffffff;
@@ -1182,9 +1183,9 @@ margin-top: 2.5rem;
 .mathe_beschreibung ul li a {
   text-decoration: none;
   color: #2e7d32;
-  transition: 0.4s ease-in-out;
+  transition: 0.6s ease;
 }
-.mathe_beschreibung > ul li a:hover {
+.mathe_beschreibung a:hover {
   text-decoration: underline;
   color: rgba(65, 105, 225, 1);
   font-family: arial;
@@ -1238,20 +1239,16 @@ margin-top: 2.5rem;
 }
 /*second div in algebra*/
 .mathe_container #stick {
-  display: flex;
-  flex-direction: column;
   background-color: hsl(240, 100%, 90%);
-  gap: 1.5rem;
   height: auto;
-  align-items: center;
   text-align: center;
 }
 /*Zahl1 Zahl2 algebra*/
-.mathe_container .inal {
+.mathe_container #stick  div {
   margin-top: 1rem;
 }
 
-.mathe_container .inal input {
+.mathe_container #stick input {
   width: 100px;
   height: 20px;
   padding: 12px;
@@ -1262,8 +1259,8 @@ margin-top: 2.5rem;
   margin-left: 1rem;
 }
 
-.mathe_container .inal button {
-  padding: 0.3rem 1.5rem;
+.mathe_container #stick button {
+  padding: 0.5rem 20px;
   background-color: hsl(120, 100%, 90%);
   border-radius: 6px;
   margin-top: 1rem;
@@ -1384,7 +1381,10 @@ margin-top: 2.5rem;
       "fun-fact fun-fact"
       "footer footer";
   }
- 
+  /*alternativ*/
+  .header_hamburger-menu{
+    display: none;
+  }
 
   #mint_1,
   #mint_3 {
@@ -1483,11 +1483,10 @@ margin-top: 2.5rem;
   /*----------------------start_footer_all----------------------*/
 
   #footer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 60px 1fr 1fr;
     grid-template-areas:
-      "svgfoot svgfoot"
-      "contactfoot  folgenfoot"
-      "endfoot endfoot"
+      "svgfoot contactfoot  folgenfoot"
+      "endfoot endfoot endfoot"
     ;
     padding: 3rem 1.5rem 0;
     font-size: larger;
@@ -1615,7 +1614,6 @@ margin-top: 2.5rem;
     min-height: 100vh;
     position: sticky;
     top: 0;
-    
   }
  
 
@@ -1742,7 +1740,7 @@ margin-top: 2.5rem;
   .mathe_container #stick {
     font-size: 1.4rem;
   }
-  .mathe_container .inal input {
+  .mathe_container #stick input {
     width: 150px;
     height: 30px;
     padding: 1rem;
